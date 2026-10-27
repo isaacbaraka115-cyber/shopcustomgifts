@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #1c1917;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A88234 0%, #D4AF37 50%, #996515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: #E2C799;
+}
+
+.gold-border-subtle {
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #F3ECE1 0%, #FFFDF9 50%, #F3ECE1 100%);
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Aurelia Jewelry Catalogue",
+  "description": "Exclusive fine jewelry catalogue with AI-powered vision categorization, luxury customer showcase, and batch photo upload.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

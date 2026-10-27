@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia Jewelry Catalogue</title>
+    <meta name="description" content="Exclusive fine jewelry catalogue with AI-powered vision categorization, luxury customer showcase, and batch photo upload." />
+    <meta property="og:title" content="Aurelia Jewelry Catalogue" />
+    <meta property="og:description" content="Exclusive fine jewelry catalogue with AI-powered vision categorization, luxury customer showcase, and batch photo upload." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // In iFrame / Cloud Run preview environments, HMR WebSockets are disabled.
+      // Ignore WebSocket errors as specified in environment guidelines.
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event && event.reason;
+        var message = (reason && (reason.message || reason.stack)) || String(reason || '');
+        if (message.includes('WebSocket') || message.includes('@vite/client') || message.includes('closed without opened')) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var message = (event && (event.message || event.filename)) || '';
+        if (message.includes('WebSocket') || message.includes('@vite/client')) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-[#FAF8F5] text-stone-900 antialiased selection:bg-[#E2C799] selection:text-stone-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
